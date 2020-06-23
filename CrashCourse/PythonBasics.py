@@ -80,4 +80,4 @@ print(slice_str[::3])  # output: scg
 
 # step in slice reverse
 slice_reverse = "gnicils"
-print(slice_reverse[5::-1])
+print(slice_reverse[6::-1])
