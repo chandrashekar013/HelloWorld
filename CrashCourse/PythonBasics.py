@@ -54,11 +54,30 @@ b = 5
 print(a // b)  # integer division. output: 2
 print(a / b)  # regular division. output: 2.0
 
-# Sequence - Str
-sequence_string = "sequence"
-print(sequence_string[3])  # output: u
+# index - Str
+sequence_string = "index"
+print(sequence_string[3])  # output: e
 
 # negative index
 print(sequence_string[-2])  # output: c
 
+# slicing
+slice_str = "slicing"
+print(slice_str[0:3])  # from 1st up to 3rd character output: sli
+print(slice_str[:3])  # from 1st up to 3rd character output: sli
+print(slice_str[2:])  # from 2nd up to last character output: icing
+print(slice_str[:])  # from 1st up to last character output: slicing
 
+# slicing in reverse
+slice_reverse = "slicing"
+print(slice_reverse[-2:4])  # output: (no output)
+print(slice_reverse[-4:-2])  # output: ci
+print(slice_reverse[:-4])  # output: sli
+
+# step in slice
+print(slice_str[0:6:2])  # output: sii (will take every 2nd charcter starting from 0 up to 6th)
+print(slice_str[::3])  # output: scg
+
+# step in slice reverse
+slice_reverse = "gnicils"
+print(slice_reverse[5::-1])
